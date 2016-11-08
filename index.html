@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/media.css"> <!-- Resource style media-->
+  <link rel="stylesheet" href="css/fonts.css"> <!-- Resource style fonts-->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="./js/home-page.js"></script>
+  <title>Сайт Кафедры АЭМС</title>
+</head>
+<body>
+<!-- Начало верстки ГЛАВНОЙ страницы-->
+  <header>
+      <section class="cd-slider-wrapper yellow_light_bg">
+        <ul class="cd-slider">
+          <li class="visible">
+            <div>
+              <h2>Наша команда разработчиков создала машину</h2>
+              <p>В НТУ ХПИ Кафедра АЭМС создала машину на батареях поздравляем</p>
+              <a href="#" class="cd-btn"> <span class="glyphicon glyphicon-circle-arrow-down style_glyphicon_slider"></span></a>
+            </div>
+          </li>
+            
+          <li>
+            <div>
+              <h2>Slide #2 Title</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <a href="#" class="cd-btn"> <span class="glyphicon glyphicon-triangle-bottom style_glyphicon_slider"></span></a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h2>Slide #3 Title</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio!.</p>
+              <a href="#" class="cd-btn"> <span class="glyphicon glyphicon-chevron-right style_glyphicon_slider"></span></a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h2>Slide #4 Title</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="cd-btn"> <span class="glyphicon glyphicon-chevron-right style_glyphicon_slider"></span> </a>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h2>Slide #5 Title</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="cd-btn"> <span class="glyphicon glyphicon-chevron-right style_glyphicon_slider"></span></a>
+            </div>
+          </li>
+        </ul> <!-- .cd-slider -->
+      
+        <ol class="cd-slider-navigation">
+          <li class="selected"><a href="#0"><em>1</em></a></li>
+          <li><a href="#0"><em>2</em></a></li>
+          <li><a href="#0"><em>3</em></a></li>
+          <li><a href="#0"><em>4</em></a></li>
+          <li><a href="#0"><em>5</em></a></li>
+        </ol> <!-- .cd-slider-navigation -->
+        
+        <div class="cd-svg-cover" data-step1="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z" data-step2="M1400,800H383L770.7,0.6c0.2-0.3,0.5-0.6,0.9-0.6H1400v294V800z" data-step3="M1400,800H0V0.6C0,0.4,0,0.3,0,0h1400v294V800z" data-step4="M615,800H0V0.6C0,0.4,0,0.3,0,0h615L393,312L615,800z" data-step5="M0,800h-2V0.6C-2,0.4-2,0.3-2,0h2v312V800z" data-step6="M-2,800h2L0,0.6C0,0.3,0,0.3,0,0l-2,0v294V800z" data-step7="M0,800h1017L629.3,0.6c-0.2-0.3-0.5-0.6-0.9-0.6L0,0l0,294L0,800z" data-step8="M0,800h1400V0.6c0-0.2,0-0.3,0-0.6L0,0l0,294L0,800z" data-step9="M785,800h615V0.6c0-0.2,0-0.3,0-0.6L785,0l222,312L785,800z" data-step10="M1400,800h2V0.6c0-0.2,0-0.3,0-0.6l-2,0v312V800z">
+          <svg height='100%' width="100%" preserveAspectRatio="none" viewBox="0 0 1400 800">
+            <path id="cd-changing-path" d="M1402,800h-2V0.6c0-0.3,0-0.3,0-0.6h2v294V800z"/>
+          </svg>
+        </div> <!-- .cd-svg-cover -->
+      </section> <!-- .cd-slider-wrapper -->
+  </header>
+  <nav class="left_nav">
+    <ul>
+      <li id="menu-bar-1"><a href="">Новости</a></li>
+      <li id="menu-bar-2"><a href="">Аббитуриенты</a><button onclick="sub(1)"><span id="row1">&#9660;</span></button></li>
+      <li id="menu-bar-3"><a href="">Студенты</a><button onclick="sub(2)"><span id="row2">&#9660;</span></button></li>
+          <div class="sub-nav">
+              <ul>
+                <li><a href="">Алимпиады</a></li>
+                <li><a href="">Спорт</a></li>
+                <li><a href="">Жизнь</a></li>
+                <li><a href="">Студнческие проекты</a></li>
+                <li><a href="">Научные исследования</a></li>
+                <li><a href="">Дипломное проектирование</a></li>
+              </ul>
+              <span class="row"></span>
+          </div>
+      <li id="menu-bar-4"><a href="">Кафедра</a><button onclick="sub(1)"><span id="row3">&#9660;</span></button></li>
+      <li id="menu-bar-5"><a href="">Спорт</a></li>
+    </ul>
+  </nav>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+  <button class="button-menu rotate90 " onclick="rotate()">&#9776;</button> 
+</body>
+</html>

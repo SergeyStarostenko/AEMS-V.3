@@ -1,0 +1,93 @@
+/* 
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ СЛАЙДЕРА НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+МЕДИА ЗАПРОСЫ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКА С ЗАГОЛОВКОМ, ОПИСАНИЕМ, КНОПКОЙ
+---------- НАЧАЛО ----------
+*/
+@media (min-width: 900px){
+  .cd-slider > li > div {
+    padding: 50px 150px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 4em;
+    font-weight: 800;
+  }
+  .cd-slider > li p {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 200px;
+    font-size: 1.4em;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 70px;
+    padding: 0.8em 0;
+    margin-top: .8em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 899px) {
+  .cd-slider > li > div {
+    padding: 10px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+  .cd-slider > li p {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 200px;
+    font-size: 1em;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    padding: 0.8em 0;
+    margin-top: .8em;
+  }
+}
+
+@media (max-width: 499px){
+  .cd-slider > li > div {
+    padding: 5px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+  .cd-slider > li p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: -60px;
+    bottom: 5px;
+    padding: 1em 0;
+    margin-top: .8em;
+  }
+}
+/*
+________ МЕДИА ЗАПРОСЫ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКА С ЗАГОЛОВКОМ, ОПИСАНИЕМ, КНОПКОЙ ________
+---------- КОНЕЦ ----------
+*/
