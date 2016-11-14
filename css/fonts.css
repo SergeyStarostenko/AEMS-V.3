@@ -28,3 +28,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "KelsonSansLight";
+    src: url("../fonts/KelsonSansLight/KelsonSansLight.eot");
+    src: url("../fonts/KelsonSansLight/KelsonSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/KelsonSansLight/KelsonSansLight.woff") format("woff"),
+    url("../fonts/KelsonSansLight/KelsonSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
