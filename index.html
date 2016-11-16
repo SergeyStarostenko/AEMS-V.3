@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="./css/style.css"> <!-- Resource style -->
-  <link rel="stylesheet" href="./css/media.css"> <!-- Resource style media-->
-  <link rel="stylesheet" href="./css/fonts.css"> <!-- Resource style fonts-->
-  <link rel="stylesheet" href="./css/bootstrap.gluficon.min.css"> <!-- Resource style fonts-->
+  <link href="./css/reset.css" rel="stylesheet"> <!-- CSS reset -->
+  <link href="./css/style-home.css" rel="stylesheet"> <!-- Resource style-home -->
+  <link href="./css/media.css" rel="stylesheet"> <!-- Resource style media-->
+  <link href="./css/fonts.css" rel="stylesheet"> <!-- Resource style fonts-->
+  <link href="./css/navigation.css" rel="stylesheet"> <!-- Resource style NAVIGATION-->
+  <link href="./css/bootstrap.gluficon.min.css" rel="stylesheet"> <!-- Resource style fonts-->
   <script src="./js/modernizr.js"></script> <!-- Modernizr -->
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <script src="./js/home-page.js"></script>
+  <script src="./js/navigation.js"></script>
   <title>Сайт Кафедры АЭМС</title>
 </head>
 <body>
@@ -64,6 +65,15 @@
         </div> <!-- .cd-svg-cover -->
       </section> <!-- .cd-slider-wrapper -->
   </header>
+    <!--<ul id="login" class="container-login display-none">
+      <div class="icon-container-login"></div>
+      <div class="title-container-login"></div>
+      <form action="" method="post" name="form-login">
+        <li><input class="form-login-input-text" type="text" placeholder="login" /></li>
+        <li><input class="form-login-input-text" type="password" placeholder="password" ></li>
+        <li><input class="form-login-input-submit" type="submit" value="Отправить" /></li>
+      </form>
+    </ul>-->
   <nav class="left_nav">
   <div class="left-nav-top" class="display-none">
     <button id="button-menu-user" class="button-menu-user style-glyphicon-user">
@@ -76,11 +86,20 @@
   </div>
     <ul id="left-nav-main" class ="left-nav-main display-none">
       <li id="menu-bar-1"><a href="">Новости</a></li>
-      <li id="menu-bar-2"><a href="">Аббитуриенты</a></li>
+      <li id="menu-bar-2"><a href="">Абитуриенты</a></li>
       <li id="menu-bar-3"><a href="#" id="menu-bar-3-click">Студенты</a></li>
       <li id="menu-bar-4"><a href="">Кафедра</a></li>
-      <li id="menu-bar-5"><a href="">Проекты</a></li>
+      <li id="menu-bar-5"><a href="./projects.html">Проекты</a></li>
       <li id="menu-bar-6"><a href="">Спорт</a></li>
+    </ul>
+    <ul id="login" class="container-login display-none">
+      <div class="icon-container-login"></div>
+      <div class="title-container-login"></div>
+      <form action="" method="post" name="form-login">
+        <li><input class="form-login-input-text" type="text" placeholder="login" /></li>
+        <li><input class="form-login-input-text" type="password" placeholder="password" ></li>
+        <li><input class="form-login-input-submit" type="submit" value="Войти" /></li>
+      </form>
     </ul>
     <ul id="sub-menu-students" class="sub-menu-students display-none">
       <div id="sub-menu-students-top" class="display-none">
