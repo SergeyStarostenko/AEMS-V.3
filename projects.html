@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Проекты</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
     <link href="./css/style-project.css" rel="stylesheet">
+    <link href="./css/navigation.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="./js/project.js"></script>
+    <script src="./js/navigation.js"></script>
     <!-- Bootstrap -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,11 +21,111 @@
     <![endif]-->
   </head>
   <body>
-    
-    <div class="container-project container-fluid">
-    	<div class="container-project-img col-xs-6 col-sm-6"></div>
-    	<div class="container-project-title col-xs-6 col-sm-6"></div>
+<button id="button-menu-open" class="button-menu button-menu-open display-block">
+  <span>&#9776;</span>
+  <span class="button-menu-open-p">меню</span>
+</button> 
+<nav class="left_nav">
+  <div class="left-nav-top" class="display-none">
+    <button id="button-menu-user" class="button-menu-user style-glyphicon-user">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <span class="glyphicon-user-title" >Вход</span>
+    </button>
+    <button id="button-menu-close" class="button-menu button-menu-close">
+    <span>&#10006;</span>
+    </button> 
+  </div>
+    <ul id="left-nav-main" class ="left-nav-main display-none">
+      <li id="menu-bar-1"><a href="">Новости</a></li>
+      <li id="menu-bar-2"><a href="">Абитуриенты</a></li>
+      <li id="menu-bar-3"><a href="#" id="menu-bar-3-click">Студенты</a></li>
+      <li id="menu-bar-4"><a href="">Кафедра</a></li>
+      <li id="menu-bar-5"><a href="./projects.html">Проекты</a></li>
+      <li id="menu-bar-6"><a href="">Спорт</a></li>
+    </ul>
+    <ul id="login" class="container-login display-none">
+      <div class="icon-container-login"></div>
+      <div class="title-container-login"></div>
+      <form action="" method="post" name="form-login">
+        <li><input class="form-login-input-text" type="text" placeholder="login" /></li>
+        <li><input class="form-login-input-text" type="password" placeholder="password" ></li>
+        <li><input class="form-login-input-submit" type="submit" value="Войти" /></li>
+      </form>
+    </ul>
+    <ul id="sub-menu-students" class="sub-menu-students display-none">
+      <div id="sub-menu-students-top" class="display-none">
+        <span id="back-left-nav-main" class="glyphicon glyphicon-chevron-left arrow-left-sub-menu-students" style="position:absolute;top:0;" aria-hidden="true"></span>
+        <span class="sub-menu-title">Студенты</span>
+        <span class="line"></span>
+      </div>
+      <div id="sub-menu-students-img" class="display-none">
+        <li id="sub-menu-students-img-1"><a href=""></a></li>
+        <li id="sub-menu-students-img-2"><a href=""></a></li>
+        <li id="sub-menu-students-img-3"><a href=""></a></li>
+        <li id="sub-menu-students-img-4"><a href=""></a></li>
+        <li id="sub-menu-students-img-5"><a href=""></a></li>
+        <li id="sub-menu-students-img-6"><a href=""></a></li>
+      </div>
+    </ul>
+  </nav>
+<div class="container-project container-fluid">
+  <!-- START №1 -->
+  <div class="row">
+  	<div class="container-project-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="row">
+        <div id="id1" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        <div id="id2" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      </div>
     </div>
+    <div id="bg-1" class="container-project-title col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h1>Проект Tempus</h1>
+      <p>Образовательная программа Европеского Союза, которая поддерживает модернизацию системы высшего образования.</p>
+    </div>
+  </div>
+  <!-- FINISH №1 -->
+  <!-- START №2 -->
+  <div class="row">
+    <div class="col-lg-push-6 col-md-push-6 col-sm-push-6  container-project-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="row">
+        <div id="id3" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        <div id="id4" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      </div>
+    </div>
+    <div id="bg-2" class="col-lg-pull-6 col-md-pull-6 col-sm-pull-6  container-project-title col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h1>Робот Mr. General</h1>
+      <p>Это роботизированная платформа, которая позволяет решать задачи управления мобильным роботом, используя инфракрасные датчики.</p>
+    </div>
+  </div>
+  <!-- FINISH №2 -->
+  <!-- START №3 -->
+  <div class="row">
+    <div class="container-project-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="row">
+        <div id="id1" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        <div id="id2" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      </div>
+    </div>
+    <div id="bg-3" class="container-project-title col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h1>Проект Football</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi natus molestiae rerum voluptatibus unde fugit quia libero commodi dicta vitae  placeat amet, illum voluptates.</p>
+    </div>
+  </div>
+  <!-- FINISH №3 -->
+  <!-- START №4 -->
+  <div class="row">
+    <div class="col-lg-push-6 col-md-push-6 col-sm-push-6  container-project-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="row">
+        <div id="id3" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        <div id="id4" class="container-project-img-slaider col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      </div>
+    </div>
+    <div id="bg-4" class="col-lg-pull-6 col-md-pull-6 col-sm-pull-6  container-project-title col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h1>Робот Mr. General</h1>
+      <p>Это роботизированная платформа, которая позволяет решать задачи управления мобильным роботом, используя инфракрасные датчики.</p>
+    </div>
+  </div>
+  <!-- FINISH №4 -->
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
