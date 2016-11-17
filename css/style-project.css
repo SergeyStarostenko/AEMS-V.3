@@ -74,36 +74,36 @@
 	transition: all .5s;
 }
 
-#id1{
+#bgImg-1{
 	background-image: url(../img/img001.jpg);
 }
 
-#id2{
+#bgImg-2{
 	background-image: url(../img/img002.jpg);
 }
 
-#id3{
+#bgImg-3{
 	background-image: url(../img/img003.jpg);
 }
 
-#id4{
+#bgImg-4{
 	background-image: url(../img/img004.jpg);
 }
 
-#bg-1{
+#bgTitle-1{
 	background-color: #FFD10E;
 }
 
-#bg-2{
+#bgTitle-2{
 	background-color: #4AC124;
 }
 
-#bg-3{
+#bgTitle-3{
 	background-color: #FF474E; 
 	/* Изменить оттенок красного?*/
 }
 
-#bg-4{
+#bgTitle-4{
 	background-color: #2D95CE;
 }
 
