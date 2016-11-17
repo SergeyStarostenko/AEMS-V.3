@@ -26,15 +26,17 @@
 
 .container-project-title {
 	height: 100vh;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .container-project-title>h1 {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "KelsonSansRegular";
-	font-size: 5em;
+	font-family: "OpenSansCondensedBold";
+	font-size: 5.5em;
 	font-weight: bold;
-	color: #fff;
 	margin-top: 0;
 }
 
@@ -43,12 +45,33 @@
 	text-align: left;
 	font-family: "KelsonSansRegular";
 	font-size: 2em;
-	color: #fff;
 	padding: 10px 20px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	text-align-last: center;
 	text-align: center;
+}
+
+.container-project-title>button {
+	text-transform: uppercase;
+	font-family: "KelsonSansRegular";
+	font-size: 2em;
+	padding: 10px;
+	outline: none;
+	border: none;
+	color: #fff;
+	border: 3px solid #fff;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	cursor: pointer;
+	transition: all .5s;
+	font-weight: bold;
+}
+
+.container-project-title>button:hover {
+	transition: all .5s;
 }
 
 #id1{
@@ -76,9 +99,46 @@
 }
 
 #bg-3{
-	background-color: #FF474E;
+	background-color: #FF474E; 
+	/* Изменить оттенок красного?*/
 }
 
 #bg-4{
 	background-color: #2D95CE;
+}
+
+#b-1{
+	background-color: #FFD10E;
+}
+
+#b-2{
+	background-color: #4AC124;
+}
+
+#b-3{
+	background-color: #FF474E;
+}
+
+#b-4{
+	background-color: #2D95CE;
+}
+
+#b-1:hover {
+	color: #FFD10E;
+	background-color: #fff;
+}
+
+#b-2:hover {
+	color: #4AC124;
+	background-color: #fff;
+}
+
+#b-3:hover {
+	color: #FF474E;
+	background-color: #fff;
+}
+
+#b-4:hover {
+	color: #2D95CE;
+	background-color: #fff;
 }

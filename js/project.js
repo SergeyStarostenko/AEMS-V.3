@@ -9,9 +9,11 @@ $(document).ready(function(){
     	console.log("!со всеми отступами hight -> .container-project-title > h1 = " + containerProjectTitleH1Hight);
     var containerProjectTitlePHight = $(".container-project-title>p").outerHeight(true);
     	console.log("!!!со всеми отступами hight -> .container-project-title > p = " + containerProjectTitlePHight);
-    var sumContainerProjectTitleH1P = containerProjectTitleH1Hight + containerProjectTitlePHight;
-    	console.log("sum hight -> .container-project-title > h1 + p = " + sumContainerProjectTitleH1P);
-	var  paddingTopContainerProjectTitleH1 = (containerProjectTitleHight - sumContainerProjectTitleH1P) / 2;
+    var containerProjectTitleButtonHight = $(".container-project-title>button").outerHeight(true);
+    	console.log("!!!со всеми отступами hight -> .container-project-title > button = " + containerProjectTitleButtonHight);
+    var sumContainerProjectTitleH1PButton = containerProjectTitleH1Hight + containerProjectTitlePHight + containerProjectTitleButtonHight;
+    	console.log("sum hight -> .container-project-title > h1 + p = " + sumContainerProjectTitleH1PButton);
+	var  paddingTopContainerProjectTitleH1 = (containerProjectTitleHight - sumContainerProjectTitleH1PButton) / 2;
     	console.log("padding-top -> .container-project-title > h1 = " + paddingTopContainerProjectTitleH1);
    	$(".container-project-title>h1").css({'padding-top': paddingTopContainerProjectTitleH1 + 'px'});
     	console.log("padding-top -> .container-project-title > h1 == OK");
